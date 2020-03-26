@@ -13,6 +13,11 @@
 		58E8BE43242CCA4E0051E0D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58E8BE41242CCA4E0051E0D2 /* Main.storyboard */; };
 		58E8BE45242CCA4F0051E0D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58E8BE44242CCA4F0051E0D2 /* Assets.xcassets */; };
 		58E8BE48242CCA4F0051E0D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58E8BE46242CCA4F0051E0D2 /* LaunchScreen.storyboard */; };
+		58E8BE50242CCAD20051E0D2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E8BE4F242CCAD10051E0D2 /* LoginViewController.swift */; };
+		58E8BE52242CCAE30051E0D2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E8BE51242CCAE30051E0D2 /* HomeViewController.swift */; };
+		58E8BE54242CCB300051E0D2 /* ImageSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E8BE53242CCB300051E0D2 /* ImageSelectViewController.swift */; };
+		58E8BE56242CCB460051E0D2 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E8BE55242CCB460051E0D2 /* PostViewController.swift */; };
+		58E8BE58242CCB550051E0D2 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E8BE57242CCB550051E0D2 /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		58E8BE44242CCA4F0051E0D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58E8BE47242CCA4F0051E0D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58E8BE49242CCA4F0051E0D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58E8BE4F242CCAD10051E0D2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		58E8BE51242CCAE30051E0D2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		58E8BE53242CCB300051E0D2 /* ImageSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectViewController.swift; sourceTree = "<group>"; };
+		58E8BE55242CCB460051E0D2 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		58E8BE57242CCB550051E0D2 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +69,11 @@
 				58E8BE3B242CCA4E0051E0D2 /* AppDelegate.swift */,
 				58E8BE3D242CCA4E0051E0D2 /* SceneDelegate.swift */,
 				58E8BE3F242CCA4E0051E0D2 /* ViewController.swift */,
+				58E8BE4F242CCAD10051E0D2 /* LoginViewController.swift */,
+				58E8BE51242CCAE30051E0D2 /* HomeViewController.swift */,
+				58E8BE53242CCB300051E0D2 /* ImageSelectViewController.swift */,
+				58E8BE55242CCB460051E0D2 /* PostViewController.swift */,
+				58E8BE57242CCB550051E0D2 /* SettingViewController.swift */,
 				58E8BE41242CCA4E0051E0D2 /* Main.storyboard */,
 				58E8BE44242CCA4F0051E0D2 /* Assets.xcassets */,
 				58E8BE46242CCA4F0051E0D2 /* LaunchScreen.storyboard */,
@@ -138,6 +153,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58E8BE54242CCB300051E0D2 /* ImageSelectViewController.swift in Sources */,
+				58E8BE52242CCAE30051E0D2 /* HomeViewController.swift in Sources */,
+				58E8BE56242CCB460051E0D2 /* PostViewController.swift in Sources */,
+				58E8BE58242CCB550051E0D2 /* SettingViewController.swift in Sources */,
+				58E8BE50242CCAD20051E0D2 /* LoginViewController.swift in Sources */,
 				58E8BE40242CCA4E0051E0D2 /* ViewController.swift in Sources */,
 				58E8BE3C242CCA4E0051E0D2 /* AppDelegate.swift in Sources */,
 				58E8BE3E242CCA4E0051E0D2 /* SceneDelegate.swift in Sources */,
@@ -294,7 +314,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.yuto.masamura.Instagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +332,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.yuto.masamura.Instagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

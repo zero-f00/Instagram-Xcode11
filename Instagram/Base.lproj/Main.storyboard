@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="G4I-M9-8Wh">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
@@ -20,9 +20,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-565" y="139"/>
+            <point key="canvasLocation" x="-17" y="139"/>
         </scene>
-        <!--Home View Controller-->
+        <!--ホーム-->
         <scene sceneID="Q3u-t5-bSh">
             <objects>
                 <viewController storyboardIdentifier="Home" id="QVI-9e-uFd" customClass="HomeViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,12 +32,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="xvL-zd-2S9"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="ホーム" image="home" id="kEK-Sn-eCj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GyT-LF-RwQ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="125" y="139"/>
+            <point key="canvasLocation" x="-2107" y="925"/>
         </scene>
-        <!--Image Select View Controller-->
+        <!--投稿-->
         <scene sceneID="ara-vH-ARD">
             <objects>
                 <viewController storyboardIdentifier="ImageSelect" id="Ips-yH-885" customClass="ImageSelectViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
@@ -47,10 +48,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="WWq-yK-1k6"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="投稿" image="camera" id="p8I-7b-uDR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mh1-de-Bzc" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="857" y="139"/>
+            <point key="canvasLocation" x="-1294" y="925"/>
         </scene>
         <!--Post View Controller-->
         <scene sceneID="h9H-Me-GhG">
@@ -65,9 +67,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aq2-sS-hTd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-565" y="831"/>
+            <point key="canvasLocation" x="703" y="139"/>
         </scene>
-        <!--Setting View Controller-->
+        <!--設定-->
         <scene sceneID="7Hz-8A-TGu">
             <objects>
                 <viewController storyboardIdentifier="Setting" id="VeZ-m0-s63" customClass="SettingViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
@@ -77,10 +79,35 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="vNP-Mn-LYe"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="設定" image="setting" id="Wrz-5n-omh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J0H-Ko-fey" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="125" y="830"/>
+            <point key="canvasLocation" x="-501" y="925"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="XtF-Jy-byy">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="G4I-M9-8Wh" customClass="TabBarController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ep8-HX-DkX">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="QVI-9e-uFd" kind="relationship" relationship="viewControllers" id="Xi6-09-yN3"/>
+                        <segue destination="Ips-yH-885" kind="relationship" relationship="viewControllers" id="OMU-Cb-lbe"/>
+                        <segue destination="VeZ-m0-s63" kind="relationship" relationship="viewControllers" id="mgr-Bg-Ouv"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ciB-l5-xZi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1294.2028985507247" y="138.61607142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="camera" width="25" height="25"/>
+        <image name="home" width="25" height="25"/>
+        <image name="setting" width="25" height="25"/>
+    </resources>
 </document>

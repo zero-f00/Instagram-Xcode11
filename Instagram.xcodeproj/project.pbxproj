@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5810B89B242F551C009F56DC /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5810B89A242F551C009F56DC /* Const.swift */; };
+		586A99422430736500498AEB /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586A99412430736500498AEB /* PostData.swift */; };
+		586A9945243077E800498AEB /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586A9943243077E800498AEB /* PostTableViewCell.swift */; };
+		586A9946243077E800498AEB /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 586A9944243077E800498AEB /* PostTableViewCell.xib */; };
 		58DE3192242CD34E00894BA9 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DE3191242CD34E00894BA9 /* TabBarController.swift */; };
 		58DE3194242CE01A00894BA9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58DE3193242CE01A00894BA9 /* GoogleService-Info.plist */; };
 		58E8BE3C242CCA4E0051E0D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E8BE3B242CCA4E0051E0D2 /* AppDelegate.swift */; };
@@ -23,6 +27,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5810B89A242F551C009F56DC /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		586A99412430736500498AEB /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		586A9943243077E800498AEB /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		586A9944243077E800498AEB /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		58DE3191242CD34E00894BA9 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		58DE3193242CE01A00894BA9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		58E8BE38242CCA4E0051E0D2 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,7 +91,11 @@
 				58E8BE55242CCB460051E0D2 /* PostViewController.swift */,
 				58E8BE57242CCB550051E0D2 /* SettingViewController.swift */,
 				58DE3191242CD34E00894BA9 /* TabBarController.swift */,
+				5810B89A242F551C009F56DC /* Const.swift */,
 				58E8BE41242CCA4E0051E0D2 /* Main.storyboard */,
+				586A99412430736500498AEB /* PostData.swift */,
+				586A9943243077E800498AEB /* PostTableViewCell.swift */,
+				586A9944243077E800498AEB /* PostTableViewCell.xib */,
 				58E8BE44242CCA4F0051E0D2 /* Assets.xcassets */,
 				58E8BE46242CCA4F0051E0D2 /* LaunchScreen.storyboard */,
 				58E8BE49242CCA4F0051E0D2 /* Info.plist */,
@@ -98,7 +110,6 @@
 				C53AF79FC61FD981DE6B14E9 /* Pods-Instagram.debug.xcconfig */,
 				B31E99226E1CECA24E884F00 /* Pods-Instagram.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -171,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				58E8BE48242CCA4F0051E0D2 /* LaunchScreen.storyboard in Resources */,
+				586A9946243077E800498AEB /* PostTableViewCell.xib in Resources */,
 				58DE3194242CE01A00894BA9 /* GoogleService-Info.plist in Resources */,
 				58E8BE45242CCA4F0051E0D2 /* Assets.xcassets in Resources */,
 				58E8BE43242CCA4E0051E0D2 /* Main.storyboard in Resources */,
@@ -226,14 +238,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				586A9945243077E800498AEB /* PostTableViewCell.swift in Sources */,
 				58E8BE54242CCB300051E0D2 /* ImageSelectViewController.swift in Sources */,
 				58DE3192242CD34E00894BA9 /* TabBarController.swift in Sources */,
 				58E8BE52242CCAE30051E0D2 /* HomeViewController.swift in Sources */,
 				58E8BE56242CCB460051E0D2 /* PostViewController.swift in Sources */,
 				58E8BE58242CCB550051E0D2 /* SettingViewController.swift in Sources */,
+				586A99422430736500498AEB /* PostData.swift in Sources */,
 				58E8BE50242CCAD20051E0D2 /* LoginViewController.swift in Sources */,
 				58E8BE3C242CCA4E0051E0D2 /* AppDelegate.swift in Sources */,
 				58E8BE3E242CCA4E0051E0D2 /* SceneDelegate.swift in Sources */,
+				5810B89B242F551C009F56DC /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

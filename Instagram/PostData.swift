@@ -28,14 +28,26 @@ class PostData: NSObject {
     var likes: [String] = []
     
     // 自分がいいねしたかどうかのフラグ
+    // isLikedプロパティはQueryDocumentSnapshotクラスから取り出すのではなく、likesというキーで取り出したString型の配列の中にユーザ自身のIDが入っているかで値をtureかfalseのどちらかで設定
     var isLiked: Bool = false
+    
+    // コメントをした人のIDの配列
+    var comments: [String] = []
+    
+    // 自分がコメントしたかどうかのフラグ
+    // isLikedプロパティと同じようなもの
+    var isCommented: Bool = false
     
     // 上記のプロパティを初期化するメソッド
     init(document: QueryDocumentSnapshot) {
+        // Firestoreからデータを取得すると、QueryDocumentSnapshotクラスのデータが渡されてくる
+        // このクラスのdocumentIDプロパティがこのドキュメントのID（ユニークなIDとして生成された投稿ID）となる
         self.id = document.documentID
         
+        // data()メソッドで辞書形式のデータを取り出すことができる
         let postDic = document.data()
         
+        // 辞書形式になっているため、postDic["name"]のようにして取り出す
         self.name = postDic["name"] as? String
         
         self.caption = postDic["caption"] as? String
@@ -43,6 +55,7 @@ class PostData: NSObject {
         let timestamp = postDic["date"] as? Timestamp
         self.date = timestamp?.dateValue()
         
+        // このキーは「いいね」したユーザのIDを保持する配列を保存する
         if let likes = postDic["likes"] as? [String] {
             self.likes = likes
         }
@@ -54,5 +67,20 @@ class PostData: NSObject {
                 self.isLiked = true
             }
         }
+        
+        
+        // このキーは「コメント」したユーザのIDを保持する配列を保存する
+        if let comments = postDic["comment"] as? [String] {
+            self.comments = comments
+        }
+        
+        if let myid = Auth.auth().currentUser?.uid {
+            // commentsの配列の中にmyidが含まれているかチェックすることで、自分がコメントをしているかを判断
+            if self.comments.firstIndex(of: myid) != nil {
+                // myidがあれば、コメントをしていると認識する。
+                self.isCommented = true
+            }
+        }
+        
     }
 }

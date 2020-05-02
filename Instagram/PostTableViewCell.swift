@@ -71,10 +71,14 @@ class PostTableViewCell: UITableViewCell {
             self.likeButton.setImage(buttonImage, for: .normal)
         }
         
+        
+        var comments = ""
+        
         // コメントしたユーザー名とコメント内容を表示
         for comment in postData.commentText {
-            commentLabel.text = "\(comment)\n"
+            comments += "\(comment)\n"
         }
+        commentLabel.text = comments
     }
     
 }

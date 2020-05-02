@@ -58,8 +58,8 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9y8-V7-aFt">
-                        <rect key="frame" x="25" y="497" width="378" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9y8-V7-aFt">
+                        <rect key="frame" x="25" y="497" width="378" height="106"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -69,7 +69,7 @@
                     <constraint firstAttribute="trailingMargin" secondItem="9y8-V7-aFt" secondAttribute="trailing" id="01Q-Qz-LF4"/>
                     <constraint firstItem="mCE-LQ-3d8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="0Ap-iE-MT2"/>
                     <constraint firstItem="2k9-tY-zhr" firstAttribute="leading" secondItem="TAd-Z0-ts8" secondAttribute="trailing" constant="10" id="5ZD-ma-gy0"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="9y8-V7-aFt" secondAttribute="bottom" constant="85" id="8GZ-iT-e7L"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="9y8-V7-aFt" secondAttribute="bottom" id="8GZ-iT-e7L"/>
                     <constraint firstItem="HhB-XX-IYG" firstAttribute="top" secondItem="TAd-Z0-ts8" secondAttribute="bottom" constant="10" id="HAt-3u-jFV"/>
                     <constraint firstItem="C6d-45-H74" firstAttribute="centerY" secondItem="TAd-Z0-ts8" secondAttribute="centerY" id="K8U-K3-WAH"/>
                     <constraint firstItem="TAd-Z0-ts8" firstAttribute="top" secondItem="mCE-LQ-3d8" secondAttribute="bottom" constant="10" id="O0c-Dx-sa0"/>

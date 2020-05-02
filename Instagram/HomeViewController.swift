@@ -100,7 +100,9 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         // セル内のボタンのアクションをソースコードで設定する
         // addTargetの第一引数に selfを設定することで、自分自身(HomeViewController)を呼び出し対象とし、第二引数(action:)の #selectorで指定したメソッドが呼び出すメソッドになる
-        cell.likeButton.addTarget(self, action:#selector(handleButton(_:forEvent:)), for: .touchUpInside)
+        cell.likeButton.addTarget(self, action: #selector(handleButton(_:forEvent:)), for: .touchUpInside)
+        
+        cell.commentButton.addTarget(self, action: #selector(handleCommentButton(_:forEvent:)), for: .touchUpInside)
         
         return cell
     }
@@ -136,7 +138,22 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             postRef.updateData(["likes": updateValue])
         }
     }
-
+    
+    @objc func handleCommentButton(_ sender:UIButton, forEvent event: UIEvent) {
+        print("DEBUG_PRINT: コメントボタンがタップされました。遷移する。")
+            
+        let touch = event.allTouches?.first
+        let point = touch!.location(in: self.tableView)
+        let indexPath = tableView.indexPathForRow(at: point)
+            
+        let postData = postArray[indexPath!.row]
+        
+        let commentViewController = self.storyboard?.instantiateViewController(withIdentifier: "Comment") as! CommentViewController
+        commentViewController.postData = postData
+        
+        self.present(commentViewController, animated: false, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

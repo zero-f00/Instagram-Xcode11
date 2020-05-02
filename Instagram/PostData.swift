@@ -31,12 +31,8 @@ class PostData: NSObject {
     // isLikedプロパティはQueryDocumentSnapshotクラスから取り出すのではなく、likesというキーで取り出したString型の配列の中にユーザ自身のIDが入っているかで値をtureかfalseのどちらかで設定
     var isLiked: Bool = false
     
-    // コメントをした人のIDの配列
-    var comments: [String] = []
-    
-    // 自分がコメントしたかどうかのフラグ
-    // isLikedプロパティと同じようなもの
-    var isCommented: Bool = false
+    // コメントの内容
+    var commentText: [String] = []
     
     // 上記のプロパティを初期化するメソッド
     init(document: QueryDocumentSnapshot) {
@@ -68,19 +64,9 @@ class PostData: NSObject {
             }
         }
         
-        
-        // このキーは「コメント」したユーザのIDを保持する配列を保存する
-        if let comments = postDic["comment"] as? [String] {
-            self.comments = comments
+        // このキーはコメントの内容を保持する配列を保存する
+        if let commentText = postDic["commentsText"] as? [String] {
+            self.commentText = commentText
         }
-        
-        if let myid = Auth.auth().currentUser?.uid {
-            // commentsの配列の中にmyidが含まれているかチェックすることで、自分がコメントをしているかを判断
-            if self.comments.firstIndex(of: myid) != nil {
-                // myidがあれば、コメントをしていると認識する。
-                self.isCommented = true
-            }
-        }
-        
     }
 }

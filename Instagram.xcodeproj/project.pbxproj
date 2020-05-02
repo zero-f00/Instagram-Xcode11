@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5810B89B242F551C009F56DC /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5810B89A242F551C009F56DC /* Const.swift */; };
+		5861D8602458418300ECC74D /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5861D85F2458418300ECC74D /* CommentViewController.swift */; };
 		586A99422430736500498AEB /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586A99412430736500498AEB /* PostData.swift */; };
 		586A9945243077E800498AEB /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586A9943243077E800498AEB /* PostTableViewCell.swift */; };
 		586A9946243077E800498AEB /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 586A9944243077E800498AEB /* PostTableViewCell.xib */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		5810B89A242F551C009F56DC /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		5861D85F2458418300ECC74D /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		586A99412430736500498AEB /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 		586A9943243077E800498AEB /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		586A9944243077E800498AEB /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				58E8BE57242CCB550051E0D2 /* SettingViewController.swift */,
 				58DE3191242CD34E00894BA9 /* TabBarController.swift */,
 				5810B89A242F551C009F56DC /* Const.swift */,
+				5861D85F2458418300ECC74D /* CommentViewController.swift */,
 				58E8BE41242CCA4E0051E0D2 /* Main.storyboard */,
 				586A99412430736500498AEB /* PostData.swift */,
 				586A9943243077E800498AEB /* PostTableViewCell.swift */,
@@ -246,6 +249,7 @@
 				58E8BE58242CCB550051E0D2 /* SettingViewController.swift in Sources */,
 				586A99422430736500498AEB /* PostData.swift in Sources */,
 				58E8BE50242CCAD20051E0D2 /* LoginViewController.swift in Sources */,
+				5861D8602458418300ECC74D /* CommentViewController.swift in Sources */,
 				58E8BE3C242CCA4E0051E0D2 /* AppDelegate.swift in Sources */,
 				58E8BE3E242CCA4E0051E0D2 /* SceneDelegate.swift in Sources */,
 				5810B89B242F551C009F56DC /* Const.swift in Sources */,
